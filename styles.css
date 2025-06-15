@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover; 
+    background-image:url("background.jpg") ;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+#chatbox {
+    height: 500px;
+    width: 700px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: rgb(234, 245, 236);
+    padding:10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#chatbox::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chatbox::-webkit-scrollbar-thumb {
+    background: #eeed9a;
+    border-radius: 10px;
+}
+
+#chatbox::-webkit-scrollbar-thumb:hover {
+    background: #cbee59;
+}
+
+
+.input-container {
+    display: flex;
+    margin-top: 10px;
+    background-color: #9cd48f;
+}
+
+#user_input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#send_btn {
+    padding: 10px 15px;
+    background-color: #eae164;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send_btn:hover {
+    background-color:#ffff00;
+}
+
+.mode-toggle {
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 10px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+    background-image: none;
+}
+
+.dark-mode #chatbox ,.dark-mode #send_btn,.dark-mode h1{
+    background-color: #444;
+    border: 1px solid #555;
+    color:white;
+    border-radius: 5px;
+}
+.toggle_button{
+    background-color: #5d8a67;
+    border-radius: 10px;
+    
+}
+h1{color: rgb(171, 34, 16);padding-left: 50px;padding-top:10px;}
